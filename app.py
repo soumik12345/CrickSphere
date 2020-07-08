@@ -1,5 +1,5 @@
 import streamlit as st
-from src.matches import test_cricket
+from src.matches import test_cricket, one_day_international
 
 
 st.title('CrickSphere')
@@ -12,7 +12,5 @@ browse_option = st.sidebar.selectbox(
 
 if browse_option == 'Test Cricket':
     test_cricket()
-
-
 elif browse_option == 'One Day International':
-    st.warning('Under Development')
+    one_day_international()
